@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Titillium+Web:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f28ab2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3em;
+  margin-bottom: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4 {
+  font-family: 'Roboto';
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+img {
+  max-height: 75px;
+  max-width: 75px;
+  border-radius: 50%;
+  margin: 0.2em 0;
+  object-fit: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.grid-item {
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.bottomBtn {
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  background: #f28ab2;
+  border-radius: 0.5em;
+  width: 100%;
+  margin-top: 1em;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.close {
+  text-align: end;
+  font-size: 1.1em;
+  opacity: 0.4;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.outer {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 3rem 3rem;
+  background: white;
+  width: 43vw;
+  max-width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .card {
+    padding: 3rem 3rem;
+    background: white;
+    width: 90vw;
   }
-  to {
-    transform: rotate(360deg);
+  .outer {
+    width: 100vw;
   }
 }
